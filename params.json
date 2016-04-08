@@ -1,0 +1,6 @@
+{
+  "name": "Itsmean",
+  "tagline": "My devices tracker written in MEANJS",
+  "body": "# This is a MEAN Application!\r\n\r\nAll the configured devices ping to this server.\r\n\r\nIt tracks...\r\n\r\n*   Device Name\r\n*   Battery Status\r\n*   Location\r\n*   Last Person Called\r\n\r\n> Note: This is just a static report. The devices themselves need to ping (http post)\r\n> here. Then they will show up at /devices page.\r\n> I use Tasker to do an http post from Android devices.\r\n\r\nIt runs on...\r\n\r\n*   Azure for the Website\r\n*   MongoLab for the Database\r\n\r\n(C) Keyur",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
