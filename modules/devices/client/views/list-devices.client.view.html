@@ -1,0 +1,27 @@
+<section>
+  <div class="page-header">
+    <h1>Devices</h1>
+  </div>
+  <div class="list-group">
+    <a data-ng-repeat="device in vm.devices"
+       ng-href="https://www.google.co.in/maps/place/{{device.locationnet}}"
+       target="_blank"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Device
+        <span data-ng-bind="device.name"></span>
+        | Battery
+        <span data-ng-bind="device.battery"></span>
+        | Location Net
+        <span data-ng-bind="device.locationnet"></span>
+        | Last Call Out Name
+        <span data-ng-bind="device.lastcalloutname"></span>
+        | Created
+        <span data-ng-bind="device.created | date:'medium'"></span>
+      </small>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.devices.$resolved && !vm.devices.length">
+    No Devices yet, why don't you <a data-ui-sref="devices.create">create one</a>?
+  </div>
+</section>
